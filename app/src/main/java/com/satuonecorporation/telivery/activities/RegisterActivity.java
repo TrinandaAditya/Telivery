@@ -1,4 +1,4 @@
-package com.androidtutorialshub.loginregister.activities;
+package com.satuonecorporation.telivery.activities;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,10 +11,10 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 
-import com.androidtutorialshub.loginregister.R;
-import com.androidtutorialshub.loginregister.helpers.InputValidation;
-import com.androidtutorialshub.loginregister.model.User;
-import com.androidtutorialshub.loginregister.sql.DatabaseHelper;
+import com.satuonecorporation.telivery.R;
+import com.satuonecorporation.telivery.helpers.InputValidation;
+import com.satuonecorporation.telivery.model.User;
+import com.satuonecorporation.telivery.sql.DatabaseHelper;
 
 /**
  * Created by lalit on 8/27/2016.

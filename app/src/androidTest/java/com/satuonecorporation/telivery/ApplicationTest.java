@@ -1,4 +1,4 @@
-package com.androidtutorialshub.loginregister;
+package com.satuonecorporation.telivery;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

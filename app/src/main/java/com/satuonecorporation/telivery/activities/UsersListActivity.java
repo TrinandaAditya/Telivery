@@ -1,4 +1,4 @@
-package com.androidtutorialshub.loginregister.activities;
+package com.satuonecorporation.telivery.activities;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -9,10 +9,10 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.androidtutorialshub.loginregister.R;
-import com.androidtutorialshub.loginregister.adapters.UsersRecyclerAdapter;
-import com.androidtutorialshub.loginregister.model.User;
-import com.androidtutorialshub.loginregister.sql.DatabaseHelper;
+import com.satuonecorporation.telivery.R;
+import com.satuonecorporation.telivery.adapters.UsersRecyclerAdapter;
+import com.satuonecorporation.telivery.model.User;
+import com.satuonecorporation.telivery.sql.DatabaseHelper;
 
 import java.util.ArrayList;
 import java.util.List;
