@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.satuonecorporation.telivery.activities.LoginActivity"
+            android:name=".activities.LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,11 +18,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.satuonecorporation.telivery.activities.RegisterActivity"
+            android:name=".activities.RegisterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.satuonecorporation.telivery.activities.UsersListActivity"
+            android:name=".activities.UsersListActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.home.UserHomeActivity"
+            android:label="@string/title_activity_user_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
