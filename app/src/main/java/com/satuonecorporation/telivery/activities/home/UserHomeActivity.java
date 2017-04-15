@@ -1,5 +1,7 @@
 package com.satuonecorporation.telivery.activities.home;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,6 +17,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.satuonecorporation.telivery.R;
+import com.satuonecorporation.telivery.activities.BeliActivity;
+import com.satuonecorporation.telivery.activities.MenuActivity;
 import com.satuonecorporation.telivery.activities.home.userFragment.MenuMakanan;
 
 public class UserHomeActivity extends AppCompatActivity
@@ -44,6 +48,7 @@ public class UserHomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -88,6 +93,7 @@ public class UserHomeActivity extends AppCompatActivity
         if (id == R.id.nav_menu_makanan) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_user_home, new MenuMakanan()).commit();
+
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {

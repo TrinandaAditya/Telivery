@@ -1,12 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.v4.widget.NestedScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background"
+android:paddingBottom="20dp"
+android:paddingLeft="20dp"
+android:paddingRight="20dp"
+android:paddingTop="20dp"
+tools:context=".activities.home.UserHomeActivity"
+android:id="@+id/rv_list">
 
-    <TextView
-        android:text="ini makanan"
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textview"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
-</LinearLayout>
+        android:layout_height="149dp">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="133dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/ayambakar" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="190dp"
+            android:layout_height="175dp">
+            <TextView
+                android:text="Paket Ayam Bakar + Es Teh
+            Rp.15.000, RM Angkringan Terserah"
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tambah ke keranjang"
+                android:id="@+id/beli"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickOpenWebpageButton"
+                android:text="Lihat Lokasi Warung"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="137dp"
+            android:id="@+id/makanan2"
+            android:src="@drawable/tuna" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="190dp"
+            android:layout_height="134dp">
+            <TextView
+                android:text="Ikan Tuna + Es Teh
+            Rp.20.000, RM KAMINUMASA "
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tambah ke keranjang"
+                android:id="@+id/beli2"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickOpenWebpageButton2"
+                android:text="Lihat Lokasi Warung"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="167dp">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/makanan3"
+            android:src="@drawable/ayammadu" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="190dp"
+            android:layout_height="151dp">
+
+            <TextView
+                android:text="Ayam Madu + Es Teh
+            Rp.18.000,
+            RM Angkringan Terserah"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tambah ke keranjang"
+                android:id="@+id/beli3"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickOpenWebpageButton3"
+                android:text="Lihat Lokasi Warung"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>
