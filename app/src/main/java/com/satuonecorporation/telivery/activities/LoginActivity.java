@@ -12,6 +12,7 @@ import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 
 import com.satuonecorporation.telivery.R;
+import com.satuonecorporation.telivery.activities.home.OwnerHomeActivity;
 import com.satuonecorporation.telivery.activities.home.UserHomeActivity;
 import com.satuonecorporation.telivery.helpers.InputValidation;
 import com.satuonecorporation.telivery.sql.DatabaseHelper;
@@ -118,7 +119,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 , textInputEditTextPassword.getText().toString().trim())) {
 
 
-            Intent accountsIntent = new Intent(activity, UserHomeActivity.class);
+            Intent accountsIntent = new Intent(activity, OwnerHomeActivity.class);
             accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
             emptyInputEditText();
             startActivity(accountsIntent);

@@ -26,6 +26,10 @@
         <activity
             android:name=".activities.home.UserHomeActivity"
             android:label="@string/title_activity_user_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.home.OwnerHomeActivity"
+            android:label="@string/title_activity_owner_home"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
