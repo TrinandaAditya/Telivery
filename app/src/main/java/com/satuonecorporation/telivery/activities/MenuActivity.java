@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.satuonecorporation.telivery.R;
+import com.satuonecorporation.telivery.activities.home.UserHomeActivity;
 
 /**
  * Created by yurifatul on 15/04/2017.
@@ -17,23 +19,36 @@ import com.satuonecorporation.telivery.R;
 public class MenuActivity extends AppCompatActivity {
 
     private Button mBeli;
+    private TextView mMakanan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_makanan);
 
+        mMakanan = (TextView)findViewById(R.id.textView);
+
         mBeli =(Button)findViewById(R.id.beli);
         mBeli.setOnClickListener(new View.OnClickListener() {
-            String textEntered = mBeli.getText().toString();
-            Context context = MenuActivity.this;
+            String textEntered = mMakanan.getText().toString();
+            //Context context = MenuActivity.this;
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(MenuActivity.this, BeliActivity.class);
-                intent.putExtra(Intent.EXTRA_TEXT, textEntered);
+                intent.putExtra("Makanan", textEntered);
                 startActivity(intent);
 
             }
         });
+
+//        mBeli.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                Context context = MenuActivity.this;
+//                Class destinationActivity = BeliActivity.class;
+//                Intent intent = new Intent(context, destinationActivity);
+//                startActivity(intent);
+//            }
+//        });
     }
 
     /**

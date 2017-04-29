@@ -18,7 +18,7 @@
         android:text="Yang akan anda beli :"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/makanan"
+        android:id="@+id/pesanan"
         android:layout_weight="1" />
 
     <Button
