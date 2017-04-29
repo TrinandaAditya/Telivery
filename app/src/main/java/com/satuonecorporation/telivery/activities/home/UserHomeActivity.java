@@ -15,21 +15,46 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.satuonecorporation.telivery.R;
 import com.satuonecorporation.telivery.activities.BeliActivity;
 import com.satuonecorporation.telivery.activities.MenuActivity;
+import com.satuonecorporation.telivery.activities.MinumanActivity;
 import com.satuonecorporation.telivery.activities.home.userFragment.MenuMakanan;
 
 public class UserHomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private Button mMenu;
+    private Button mMinum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        mMenu = (Button) findViewById(R.id.menu);
+        mMinum = (Button) findViewById(R.id.menu2);
+        mMenu.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Context context = UserHomeActivity.this;
+                Class destinationActivity = MenuActivity.class;
+                Intent intent = new Intent(context, destinationActivity);
+                startActivity(intent);
+            }
+        });
+        mMinum.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Context context = UserHomeActivity.this;
+                Class destinationActivity = MinumanActivity.class;
+                Intent intent = new Intent(context, destinationActivity);
+                startActivity(intent);
+            }
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

@@ -40,12 +40,21 @@ android:id="@+id/rv_list">
                 android:layout_width="257dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView" />
-
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="200dp"
+            android:layout_height="50dp">
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="tambah ke keranjang"
+                android:text="keranjang"
+                android:id="@+id/tambah"/>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="Beli"
                 android:id="@+id/beli"/>
+        </LinearLayout>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,11 +88,21 @@ android:id="@+id/rv_list">
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tambah ke keranjang"
-                android:id="@+id/beli2"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="200dp"
+                android:layout_height="50dp">
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="keranjang"
+                    android:id="@+id/tambah2"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text="Beli"
+                    android:id="@+id/beli2"/>
+            </LinearLayout>
 
             <Button
                 android:layout_width="match_parent"
@@ -119,11 +138,21 @@ android:id="@+id/rv_list">
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tambah ke keranjang"
-                android:id="@+id/beli3"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="200dp"
+                android:layout_height="50dp">
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="keranjang"
+                    android:id="@+id/tambah3"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text="Beli"
+                    android:id="@+id/beli3"/>
+            </LinearLayout>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

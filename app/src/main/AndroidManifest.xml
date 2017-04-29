@@ -31,6 +31,10 @@
             android:name=".activities.home.OwnerHomeActivity"
             android:label="@string/title_activity_owner_home"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activities.MenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.MinumanActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

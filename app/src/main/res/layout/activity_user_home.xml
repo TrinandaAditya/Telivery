@@ -3,10 +3,57 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
+    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="149dp"
+    android:weightSum="1">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@id/image"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="0.24">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/image"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:text="SELAMAT DATANG"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/textView" />
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/email"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Makanan"
+            android:id="@+id/menu"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minuman"
+            android:id="@+id/menu2"/>
+    </LinearLayout>
+</LinearLayout>
 
     <include
         layout="@layout/app_bar_user_home"
@@ -21,5 +68,4 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_user_home"
         app:menu="@menu/activity_user_home_drawer" />
-
 </android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".activities.home.UserHomeActivity"
+    android:id="@+id/rv_list1">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="149dp">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="133dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/cappuccino" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="190dp"
+                android:layout_height="175dp">
+                <TextView
+                    android:text="Cappuccino Rp.15.000,
+RM Angkringan Terserah"
+                    android:layout_width="257dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp">
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="keranjang"
+                        android:id="@+id/tambah"/>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:text="Beli"
+                        android:id="@+id/beli"/>
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOpenWebpageButton"
+                    android:text="Lihat Lokasi Warung"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="137dp"
+                android:id="@+id/makanan2"
+                android:src="@drawable/latte" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="190dp"
+                android:layout_height="134dp">
+                <TextView
+                    android:text="Coffe Latte Rp.15.000,
+RM KAMINUMASA "
+                    android:layout_width="194dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp">
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="keranjang"
+                        android:id="@+id/tambah2"/>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:text="Beli"
+                        android:id="@+id/beli2"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOpenWebpageButton2"
+                    android:text="Lihat Lokasi Warung"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="167dp">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:id="@+id/makanan3"
+                android:src="@drawable/filter" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="190dp"
+                android:layout_height="151dp">
+
+                <TextView
+                    android:text="Coffe Filter Rp.18.000,
+RM Angkringan Terserah"
+                    android:layout_width="194dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp">
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="keranjang"
+                        android:id="@+id/tambah3"/>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:text="Beli"
+                        android:id="@+id/beli3"/>
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOpenWebpageButton3"
+                    android:text="Lihat Lokasi Warung"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>
