@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.satuonecorporation.telivery.R;
 
@@ -17,19 +18,21 @@ import com.satuonecorporation.telivery.R;
 public class MinumanActivity extends AppCompatActivity {
 
     private Button mBeli;
+    private TextView mMinuman;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_minuman);
 
+        mMinuman = (TextView)findViewById(R.id.textView);
         mBeli =(Button)findViewById(R.id.beli);
         mBeli.setOnClickListener(new View.OnClickListener() {
-            String textEntered = mBeli.getText().toString();
+            String textEntered = mMinuman.getText().toString();
             Context context = MinumanActivity.this;
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(MinumanActivity.this, BeliActivity.class);
-                intent.putExtra(Intent.EXTRA_TEXT, textEntered);
+                intent.putExtra("Minuman", textEntered);
                 startActivity(intent);
 
             }
