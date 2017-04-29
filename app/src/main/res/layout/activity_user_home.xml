@@ -16,7 +16,7 @@
     android:weightSum="1">
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:id="@id/image"
         android:src="@drawable/logo"/>
 
@@ -25,18 +25,19 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_weight="0.24">
+
+        <TextView
+            android:text="SELAMAT DATANG DI"
+            android:textSize="39dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/textView"
+            android:textColor="@color/colorAccent"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:id="@+id/image"
             android:src="@drawable/logo"/>
-        <TextView
-            android:text="SELAMAT DATANG"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:id="@+id/textView" />
-
-
         <ListView
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -45,12 +46,12 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Makanan"
+            android:text="Menu Makanan"
             android:id="@+id/menu"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Minuman"
+            android:text=" Menu Minuman"
             android:id="@+id/menu2"/>
     </LinearLayout>
 </LinearLayout>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/background"
-android:paddingBottom="20dp"
-android:paddingLeft="20dp"
-android:paddingRight="20dp"
-android:paddingTop="20dp"
-tools:context=".activities.home.UserHomeActivity"
-android:id="@+id/rv_list">
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".activities.home.UserHomeActivity"
+    android:id="@+id/rv_list"
+    app:menu="@menu/makanan_drawer">
 
 <android.support.v7.widget.LinearLayoutCompat
     android:layout_width="match_parent"
@@ -36,7 +37,8 @@ android:id="@+id/rv_list">
             android:layout_height="175dp">
             <TextView
                 android:text="Paket Ayam Bakar + Es Teh
-            Rp.15.000, RM Angkringan Terserah"
+Rp.15.000, RM Angkringan
+Terserah"
                 android:layout_width="257dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView" />
@@ -83,7 +85,7 @@ android:id="@+id/rv_list">
             android:layout_height="134dp">
             <TextView
                 android:text="Ikan Tuna + Es Teh
-            Rp.20.000, RM KAMINUMASA "
+Rp.20.000, RM KAMINUMASA "
                 android:layout_width="194dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2" />
@@ -132,8 +134,7 @@ android:id="@+id/rv_list">
 
             <TextView
                 android:text="Ayam Madu + Es Teh
-            Rp.18.000,
-            RM Angkringan Terserah"
+Rp.18.000, RM Ayam Madu"
                 android:layout_width="194dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3" />
@@ -161,5 +162,14 @@ android:id="@+id/rv_list">
         </LinearLayout>
 
     </LinearLayout>
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:columnWidth="120dp"
+        android:gravity="center"
+        android:numColumns="auto_fit" />
 </android.support.v7.widget.LinearLayoutCompat>
 </android.support.v4.widget.NestedScrollView>
